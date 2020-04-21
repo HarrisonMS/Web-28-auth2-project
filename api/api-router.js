@@ -7,7 +7,6 @@ const authenticator = require('../auth/restricted-mid')
 
 
 
-server.use(morgan('tiny'))
 router.use('/auth', authRouter);
 router.use('/users', authenticator, usersRouter);
 
