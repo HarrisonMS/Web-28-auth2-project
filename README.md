@@ -18,6 +18,7 @@ In this project we'll implement a full authentication workflow (register/login/l
 - Do your magic!
 
 ## Assignment
+// comment for init commit and PR
 
 Use Node.js, Express and Knex to build an API that provides _Authentication_ functionality using SQLite to store _User_ information.
 
