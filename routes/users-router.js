@@ -14,4 +14,16 @@ router.get("/", (req, res) => {
 		});
 });
 
+
+router.post('/', (req, res) => {
+  const userData = req.body
+  Users.add(userData)
+  .then(user => {
+    res.status(201).json(user)
+  })
+  .catch((err) => {
+    console.log(err)
+    res.status(500).json({errorMessage: 'unable to create user at this time'})
+  })
+})
 module.exports = router;
